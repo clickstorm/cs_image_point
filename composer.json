@@ -1,0 +1,37 @@
+{
+	"name": "clickstorm/cs-image-point",
+	"type": "typo3-cms-extension",
+	"description": "[clickstorm] Image Point provides a new render type with a wizard for determining coordinates on an image. Coordinates can be set on the image of a data record (e.g. content element, page, ...), which are then output as percentages.",
+	"keywords": [
+		"TYPO3",
+		"extension",
+		"clickstorm",
+		"imagePoint",
+		"coordinates"
+	],
+	"homepage": "https://www.clickstorm.de",
+	"license": [
+		"GPL-2.0-or-later"
+	],
+	"require": {
+		"typo3/cms-core": "^11.5"
+	},
+	"require-dev": {
+		"typo3/testing-framework": "*"
+	},
+	"autoload": {
+		"psr-4": {
+			"Clickstorm\\CsImagePoint\\": "Classes/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Clickstorm\\CsImagePoint\\Tests\\": "Tests"
+		}
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "cs_image_point"
+		}
+	}
+}

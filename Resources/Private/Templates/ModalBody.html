@@ -1,0 +1,48 @@
+<html data-namespace-typo3-fluid="true"
+      xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+
+<f:section name="Main">
+
+    <div class="tx-cs-image-point-modal-container">
+        <f:if condition="{sysFileReferenceUid} == 0">
+            <f:then>
+
+                <p><b>
+                    <f:translate key="error.wrongNumberOfImages.Header" extensionName="cs_image_point"/>
+                </b></p>
+                <p>
+                    <f:translate key="error.wrongNumberOfImages.Instruction" extensionName="cs_image_point"/>
+                </p>
+
+            </f:then>
+            <f:else>
+
+                <div class="tx-cs-image-point-img-wrapper js-tx-cs-image-point-img-wrapper">
+                    <f:image class="tx-cs-image-point-image js-tx-cs-image-point-image" image="{image}"/>
+                    <div class="tx-cs-image-point-codeception-dropzone"></div>
+                    <p class="tx-cs-image-point-point js-tx-cs-image-point-point"></p>
+                </div>
+
+                <div class="tx-cs-image-point-hint js-tx-cs-image-point-hint">
+                    <p>
+                        <f:translate key="hint" extensionName="cs_image_point"/>
+                    </p>
+                </div>
+
+                <p class="tx-cs-image-point-text-output js-tx-cs-image-point-text-output"
+                   data-l10n-coords="{f:translate(key: 'output.headline', extensionName: 'cs_image_point')}"
+                   data-l10n-coords-percent="{f:translate(key: 'output.coordinatesPercent', extensionName: 'cs_image_point')}"
+                   data-l10n-actual-size="{f:translate(key: 'output.actualSize', extensionName: 'cs_image_point')}"
+                   data-l10n-original-size="{f:translate(key: 'output.originalSize', extensionName: 'cs_image_point')}"
+                ></p>
+
+            </f:else>
+        </f:if>
+    </div>
+
+    <link href="{f:uri.resource(path:'Css/Stylesheet.css', extensionName: 'cs_image_point')}" rel="stylesheet"/>
+    <script src="{f:uri.resource(path:'JavaScript/jquery-ui.js', extensionName: 'cs_image_point')}"></script>
+    <script src="{f:uri.resource(path:'JavaScript/GetCoordinates.js', extensionName: 'cs_image_point')}"></script>
+
+</f:section>
+

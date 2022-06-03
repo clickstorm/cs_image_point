@@ -1,0 +1,45 @@
+<html lang="en" data-namespace-typo3-fluid="true"
+      xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+
+<f:if condition="{sysFileReferenceUid} != 0 && {tooManyImages} == false">
+    <f:then>
+        <div class="formengine-field-item t3js-formengine-field-item">
+        {fieldInformationHtml -> f:format.raw()}
+        </div>
+        <div class="form-control-wrap">
+            <div class="form-wizards-wrap">
+                <div class="form-wizards-element">
+                    <div class="input-group">
+                        <input type="text" value="{itemValue -> f:format.raw()}" {attributesString -> f:format.raw()}
+                        readonly/>
+
+                        <span class="input-group-btn">
+                    <label class="btn btn-default tx-cs-image-point-codeception-btn"
+                           id="{btnGetCoords}"
+                           data-sys-file-ref-id="{sysFileReferenceUid}"
+                           data-id="{imageId}"
+                           data-url="{uri}"
+                           data-l10n-title="{f:translate(key: 'modal.title', extensionName: 'cs_image_point')}"
+                           data-l10n-save="{f:translate(key: 'modal.save', extensionName: 'cs_image_point')}"
+                           data-l10n-cancel="{f:translate(key: 'modal.cancel', extensionName: 'cs_image_point')}"
+                           style="margin:0;" for="{attributes.id}">
+                    {iconHtml -> f:format.raw()}
+                          <f:translate key="button.determineCoordinates" extensionName="cs_image_point"/></label>
+                </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </f:then>
+    <f:else>
+        <div class="form-control-wrap">
+            <div class="form-wizards-wrap">
+                <p class="js-tx-cs-image-point-error-message"
+                   data-l10n-error="{f:translate(key: 'error.wrongNumberOfImages.instruction', extensionName: 'cs_image_point')}">
+                    <f:translate key="error.wrongNumberOfImages.instruction" extensionName="cs_image_point"/>
+                </p>
+            </div>
+        </div>
+    </f:else>
+</f:if>
+</html>

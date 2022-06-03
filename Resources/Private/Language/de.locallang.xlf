@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" target-language="de" datatype="plaintext" original="EXT:cs_image_point/Resources/Private/Language/locallang.xlf" date="2022-02-06T13:00:0Z" product-name="cs_image_point">
+		<header/>
+		<body>
+			<trans-unit id="tx_csimagepoint_coordinates.label" resname="tx_csimagepoint_coordinates.label">
+				<source>Image Point</source>
+					<target>Image Point</target>
+			</trans-unit>
+			<trans-unit id="tx_csimagepoint_coordinates.description" resname="tx_csimagepoint_coordinates.description">
+				<source>Determine Coordinates on an image</source>
+					<target>Koordinaten auf einem Bild bestimmen</target>
+			</trans-unit>
+			<trans-unit id="error.wrongNumberOfImages.instruction" resname="error.wrongNumberOfImages.instruction">
+            <source>Please add a maximum of one image to the [image] or [media] field and confirm with Save. </source>
+				<target>Bitte fügen Sie dem [image] oder [media] Feld maximal ein Bild hinzu und bestätigen Sie mit Speichern.</target>
+			</trans-unit>
+			<trans-unit id="error.wrongNumberOfImages.header" resname="error.wrongNumberOfImages.header">
+            <source>Only one image per CType allowed</source>
+				<target>Nur ein Bild pro CType erlaubt</target>
+			</trans-unit>
+		 <trans-unit id="button.determineCoordinates" resname="button.determineCoordinates">
+            <source> Determine coordinates</source>
+            	<target>Koordinaten bestimmen</target>
+         </trans-unit>
+         <trans-unit id="hint" resname="hint">
+            <source>Click on the image or drag and drop the pointer to set coordinates.</source>
+            	<target>Klicken Sie auf das Bild oder verschieben Sie den Pointer per Drag'n'Drop.</target>
+         </trans-unit>
+         <trans-unit id="output.headline" resname="output.headline">
+            <source>Coordinates</source>
+            	<target>Koordinaten</target>
+         </trans-unit>
+         <trans-unit id="output.coordinatesPercent" resname="output.coordinatesPercent">
+            <source>Percentage coordinates</source>
+            	<target>Prozentuale Koordinaten</target>
+         </trans-unit>
+         <trans-unit id="output.actualSize" resname="output.actualSize">
+            <source>Actual size</source>
+            	<target>Aktuelle Größe</target>
+         </trans-unit>
+         <trans-unit id="output.originalSize" resname="output.originalSize">
+                    <source>Original size</source>
+                    	<target>Originale Größe</target>
+         </trans-unit>
+         <trans-unit id="modal.title" resname="modal.title">
+            <source>Determine Coordinates</source>
+            	<target>Koordinaten bestimmen</target>
+         </trans-unit>
+         <trans-unit id="modal.save" resname="modal.save">
+            <source>Save</source>
+            	<target>Speichern</target>
+         </trans-unit>
+         <trans-unit id="modal.cancel" resname="modal.cancel">
+            <source>Cancel</source>
+            	<target>Abbrechen</target>
+         </trans-unit>
+		</body>
+	</file>
+</xliff>

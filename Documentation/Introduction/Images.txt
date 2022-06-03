@@ -1,0 +1,17 @@
+.. |img-1|      image:: ../Images/Introduction/cs_image_point_wizard.png
+   :height: 515
+   :width: 800
+.. :align: center
+.. :alt: cs_image_point wizard
+.. :border: 0
+.. :name: Screenshot 2
+.. :vspace: 52
+
+.. |img-2|      image:: ../Images/Introduction/cs_image_point_content_element.png
+   :height: 380
+   :width: 800
+.. :align: center
+.. :alt: cs_image_point fields
+.. :border: 0
+.. :name: Screenshot 1
+.. :vspace: 52

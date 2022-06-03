@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+   <file source-language="en" datatype="plaintext" original="EXT:cs_image_point/Resources/Private/Language/locallang.xlf" date="2022-06-02T15:00:00Z" product-name="cs_image_point">
+      <header/>
+      <body>
+        <trans-unit id="tx_csimagepoint_coordinates.label" resname="tx_csimagepoint_coordinates.label">
+            <source>Image Point</source>
+        </trans-unit>
+        <trans-unit id="tx_csimagepoint_coordinates.description" resname="tx_csimagepoint_coordinates.description">
+            <source>Determine Coordinates on an image</source>
+        </trans-unit>
+         <trans-unit id="error.wrongNumberOfImages.instruction" resname="error.wrongNumberOfImages.instruction">
+            <source>Please add a maximum of one image to the [image] or [media] field and confirm with Save. </source>
+         </trans-unit>
+         <trans-unit id="error.wrongNumberOfImages.header" resname="error.wrongNumberOfImages.header">
+            <source>Only one image per CType allowed</source>
+         </trans-unit>
+         <trans-unit id="button.determineCoordinates" resname="button.determineCoordinates">
+            <source> Determine coordinates</source>
+         </trans-unit>
+         <trans-unit id="hint" resname="hint">
+            <source>Click on the image or drag and drop the pointer to set coordinates.</source>
+         </trans-unit>
+         <trans-unit id="output.headline" resname="output.headline">
+            <source>Coordinates</source>
+         </trans-unit>
+         <trans-unit id="output.coordinatesPercent" resname="output.coordinatesPercent">
+            <source>Percentage coordinates</source>
+         </trans-unit>
+         <trans-unit id="output.actualSize" resname="output.actualSize">
+            <source>Actual size</source>
+         </trans-unit>
+        <trans-unit id="output.originalSize" resname="output.originalSize">
+            <source>Original size</source>
+        </trans-unit>
+         <trans-unit id="modal.title" resname="modal.title">
+            <source>Determine Coordinates</source>
+         </trans-unit>
+         <trans-unit id="modal.save" resname="modal.save">
+            <source>Save</source>
+         </trans-unit>
+         <trans-unit id="modal.cancel" resname="modal.cancel">
+            <source>Cancel</source>
+         </trans-unit>
+      </body>
+   </file>
+</xliff>

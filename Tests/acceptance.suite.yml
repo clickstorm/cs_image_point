@@ -1,0 +1,23 @@
+# Codeception Test Suite Configuration
+#
+# Suite for acceptance tests.
+# Perform tests in browser using the WebDriver or PhpBrowser.
+# If you need both WebDriver and PHPBrowser tests - create a separate suite.
+
+actor: AcceptanceTester
+
+### to start the selenium server automatically ###
+extensions:
+  enabled:
+    - Codeception\Extension\RunProcess:
+        0: java -jar ~/Selenium/selenium-server-4.1.4.jar
+        sleep: 5 # wait 5 seconds for processes to boot
+### to start the selenium server automatically ###
+modules:
+  enabled:
+    - WebDriver:
+        window_size: 800x600
+        url:
+        browser: chrome
+    - \Helper\Acceptance
+    - \TYPO3\TestingFramework\Core\Acceptance\Helper\Acceptance
